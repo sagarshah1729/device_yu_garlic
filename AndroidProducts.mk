@@ -15,3 +15,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cos_garlic.mk
+
+COMMON_LUNCH_CHOICES := \
+    cos_garlic-userdebug \
+    cos_garlic-eng
+
