@@ -24,13 +24,13 @@ $(call inherit-product, device/yu/garlic/device.mk)
 # Inherit from common device
 $(call inherit-product, device/tinno/msm8937-common/msm8937.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Cosmic-OS stuff.
+$(call inherit-product, vendor/cos/config/common_full_phone.mk)
 
 # Set those variables here to overwrite the inherited values.
 BOARD_VENDOR := yu
 PRODUCT_DEVICE := garlic
-PRODUCT_NAME := lineage_garlic
+PRODUCT_NAME := cos_garlic
 PRODUCT_BRAND := yu
 PRODUCT_MODEL := YU Yureka Black
 PRODUCT_MANUFACTURER := yu
@@ -42,3 +42,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := YU/YU5040/YU5040:7.1.1/NMF26F/1502798695:user/release-keys
+
+# it's Official build!
+COS_RELEASE := true
